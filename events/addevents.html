@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events</title>
+</head>
+<body>
+    <h1>Javascript Events</h1>
+    
+    <button>Don't Press me!</button>
+    <br><br>
+
+    <a href="http://google.com">Link to Google</a>
+    <br><br>
+
+    <form action="" method="get">
+        <label for="">Your name: <input type="text" name="name"></label>
+    </form>
+
+    <script>
+        var btn = document.querySelector('button');
+    // using anonymous functions with addEventListener
+         btn.addEventListener('click', function(event) {
+            event.target.style.backgroundColor='papayawhip';
+            alert("I told you not to press me!")
+        });
+
+
+         // Preventing Default Behaviour
+         // You can use the event object in combination with the preventDefault(); method to keep the browser from doing it's default behaviour
+        var link = document.querySelector('a');
+        link.addEventListener('click', function(event){
+            // event.preventDefault();
+            alert("Sorry, no google for you!")
+        })
+
+        // more on events 
+        var myForm = document.querySelector('form');
+        myForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            var formData = document.querySelector('input').value;
+            alert(formData);
+ 
+        })
+    </script>
+</body>
+</html>

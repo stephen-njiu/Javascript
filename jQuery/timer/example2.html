@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Timers 2</title>
+
+	<style>
+		.one {
+			width:20px;
+			height:20px;
+			background:#910104;
+			align-items: center;
+			margin: auto auto;
+			border-radius: 50%;
+			transition: all 1s;
+		}
+
+		.two {
+			width:70px;
+			height:70px;
+			margin: auto auto;
+			background:#1B2F6B;
+			border-radius: 50%;
+			transition: all 1s;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="thediv" class="one"></div>
+
+	<script>
+		const theDiv = document.getElementById("thediv");
+let num = 'one';
+
+const interval = setInterval(() => {
+    if (num === 'one') {
+        theDiv.setAttribute('class', 'two');
+        num = 'two';
+    } else {
+        theDiv.setAttribute('class', 'one');
+        num = 'one';
+    }
+}, 950);
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict in Javascript</title>
+</head>
+<body>
+    <h1>Testing Scope in Javascript</h1>
+    <p>Here is a paragraph</p>
+    <p>Here is another paragraph</p>
+    <p>Here is one more paragraph</p>
+
+    <script>
+        "user strict";
+
+        var newVar = "not properly defined";
+
+        console.log(newVar);
+
+        // Strategy 3 for safe and effecient javascript
+        // Const and let e.g const cheese = 'yummy';
+
+        const cheese = 'yummy';
+        console.log(cheese);
+        // cheese = 'cheese is yucky'; // throws an error..
+
+        for (let i = 0; i < 10; i++){
+            console.log(i);
+        }
+        // console.log(`The value of i is ${i}`) // this throws i since let i is only accessible in the block it is applied
+
+        // Generally use const to define variable and let for loops. Avoid use of var in most case
+
+        // one reason to use 'const' in defining variables
+        console.log(kane);
+        var kane = 'yummy';
+
+    </script>
+</body>
+</html>

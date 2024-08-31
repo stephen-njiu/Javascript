@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+    
+    <style>
+        .blue {color: blue;}
+    </style>
+
+</head>
+<body>
+    <h1>DOM Examples</h1>
+    
+    <div id="special">
+        <p>Here is a paragraph</p>
+        <p>Here is another paragraph</p>
+        <p>Here is one more paragraph</p>
+    </div>
+
+    <script>
+        var firstParagraph = document.querySelector('p');
+        firstParagraph.className = 'blue';
+
+    </script>
+</body>
+</html>

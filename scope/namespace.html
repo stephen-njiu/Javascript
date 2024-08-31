@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namespacing and Closures</title>
+</head>
+<body>
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <p>This is the third paragraph</p>
+
+
+    <script>
+        // You can wrap code around an immediately invoked function expression. This anonymous function runs as soon as the script loads, and it will also keep variables out of global scope.
+        
+        // an IIFE (Immediately Invoked Function Expression) is a Javascript function that runs as soon as it is defined.
+
+        (function(){
+            var myPs = document.querySelectorAll('p');
+            for (var i = 0; i < myPs.length; i ++){
+                myPs[i].style.color = 'crimson';
+            }
+        }());
+    </script>
+</body>
+</html>

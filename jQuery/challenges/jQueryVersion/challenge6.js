@@ -1,0 +1,1 @@
+$('nav>ul>li>a').click(() => {alert('clicked')});

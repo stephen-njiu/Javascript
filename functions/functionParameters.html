@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Javascript Functions</h1>
+    <script>
+        function upperMessage(message){
+            var upperCase = message.toUpperCase();
+            console.log(upperCase);
+        }
+
+        upperMessage("Hello How are you doing?");
+
+        function addNums(num1, num2) {
+            var sum = num1 + num2;
+            console.log(sum);
+        }
+
+        addNums(34.33,88);
+
+        function returnSum(num1, num2){
+            return num1 + num2;
+        }
+
+        console.log(returnSum(33,22));
+        // Generate a random number in js
+
+        // console.log(Math.random())
+        foods = ['cheese','chicken','grapes','hamburgers','chineseFry'];
+
+        function randomInt(min , max){
+            return Math.floor( (max-min +1)* Math.random()) + min;
+        }
+        console.log(foods[randomInt(0,foods.length-1)])
+
+
+
+    </script>
+</body>
+</html>

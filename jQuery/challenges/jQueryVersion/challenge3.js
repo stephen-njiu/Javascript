@@ -1,0 +1,1 @@
+$('#main p:last-of-type').css({'font-size': '36px', 'color': 'red'});

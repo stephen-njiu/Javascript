@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Anonymous Function</h1>
+    <script>
+        var greeting = function() {
+            return "hello from the function!"
+        }
+        anyString = greeting()
+        console.log(anyString)
+        // Arrow functions
+        var capitalizeArrow = anyString => anyString.toUpperCase();
+        console.log(capitalizeArrow(greeting())) 
+    </script>
+</body>
+</html>

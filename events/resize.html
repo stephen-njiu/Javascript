@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events</title>
+</head>
+<body>
+    <hi>Resize the window and check the console</hi>
+    <h2>Press a key on your keyboard</h2>
+    <script>
+        window.addEventListener('resize', function(){
+            console.log('the window width is '+ window.innerWidth);
+            console.log('the window height is ' + window.innerHeight )
+        })
+        // Key Down Event
+        // This one will detect if a key was pressed on the keyboard. Of course it might be helpful to know which key was pressed (event.which)!
+        document.addEventListener('keydown', function(event){
+            alert(`the ${event.key} key was pressed`);
+        }) 
+
+    
+
+
+    </script>
+</body>
+</html>

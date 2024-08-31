@@ -1,0 +1,64 @@
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 100px;
+    background: papayawhip;
+
+}
+#content {
+    margin: 100px auto 20px auto;
+    border: 10px solid rgb(185, 155, 161);
+    width: 400px;
+    height: 266px;
+    position: relative;
+}
+
+#content img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+p {text-align: center;}
+
+/* Link Styles */
+#links {
+    width: 420px;
+    display: flex;
+    margin: auto;
+    display: block;
+    flex: 1;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#links a:hover {
+    background-color: rgb(228, 48, 84);
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px 40px;
+    cursor: pointer;
+    background-color: rgb(212, 100, 123);
+    font-size: large;
+}
+
+.fadeining {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* 6:50 */

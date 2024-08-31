@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 18</title>
+</head>
+<body>
+    <h1>Article</h1>
+    <p>Today's Date</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis temporibus ullam, non iste ipsum debitis incidunt voluptates porro atque fugiat facere, <span class="blue">Lorem, ipsum dolor.</span>  dolores consectetur quisquam? Iusto cum laudantium dolorem consequuntur consectetur.</p>
+    <br>
+    <div style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">"You're braver than you believe, and stronger than you seem, and smarter than you think" - A.A MIlne</div><br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste nobis officia aperiam laudantium quos atque, <span class="purple">Lorem, ipsum.</span> iusto, ex provident, excepturi totam molestias mollitia quas minus adipisci placeat veniam? Maiores, molestiae.
+    </p>
+  
+    <p id="copyright">copyright info</p>
+
+    <script>
+        document.getElementById('copyright').style.color = 'green';
+        document.querySelector('.purple').style.color = "rebeccapurple";
+        document.querySelector('.blue').style.color = 'blue';
+
+        // get all paragraphs on teh page, assign them to a variable, then use that variable in a loop to set the style.color property to green.
+
+        var allPs = document.getElementsByTagName('p');
+        for (var paragraph of allPs){
+            paragraph.style.color = 'green';
+        }
+
+    </script>
+
+
+</body>
+</html>

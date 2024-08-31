@@ -1,0 +1,1 @@
+$('#main').css({'font-size':'24px', 'color': 'red'});
